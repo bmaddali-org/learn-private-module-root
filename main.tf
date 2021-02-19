@@ -8,4 +8,8 @@ module "s3-webapp" {
   region = var.region
   prefix = var.prefix
   version = "2.1.0"
+  s3_tags = {
+    Name        = "AT Website Bucket"
+    Environment = "dev"
+  }
 }
